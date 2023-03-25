@@ -1,0 +1,16 @@
+P {
+    font-size: 20pt;
+    color: pink;
+    font-family: "Arial Black";
+    font-weight: normal;
+}
+H1 {
+    font-size: 36pt;font-family: "Times New Roman"; text-align: center; background: bisque;
+}
+
+BODY {
+    background-color: blue;
+    font-family: "Times New Roman";
+    color: white;
+    font-size: 20pt;
+}

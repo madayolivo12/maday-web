@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <title>Viajes</title>
+
+</head>
+<body>
+    <div class="container-fluid" style="background-color: #f991d9;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="{% url "iniciouRL" %}">Inicio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="{% url "viajarUrl" %}">Viajar
+                          <span class="visually-hidden">(current)</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url "videoUrl" %}">Vídeos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url "musicaUrl" %}">Músicas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url "pensamientoUrl" %}">Pensamientos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <br>
+    <h1 class="text-center"><b>Visitar Lugares</b></h1>
+    <br>
+
+    <div class="container-card">
+      <div class="justify-content-center">
+        <div class="col">
+          <div class="card" style="width: 40rem;">
+            <img src="https://viajardespeina.com/wp-content/uploads/2020/01/IMG_20190904_222709_166-969x550.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-justify">Ir en el bus, carro o incluso en un camión mirando lo bonito que es la naturaleza mientras escucho canciones de mi banda favorita es sin duda uno de mis pasatiempos favoritos. Sentir el aire en la cara, mientras viajo es muy bonito y valioso. De pronto recuerdo mis viajes fuera de la ciudad como en Quito, Cuenca, Manabí y otros sitios que sin duda volvería a pisar.</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="col">
+          <div class="card" style="width: 40rem;">
+            <img src="https://alanxelmundo.com/wp-content/uploads/2020/06/39135326_l.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-justify">Cómo olvidar aquel día que visité Ingapirca, sentir el clima frío, tomar un rico vaso de leche o el tomar fotografías a las hermosas llamas. Y no olvido el sabor de su rica comida esos hermosos paisajes con colores armonicos y sus aguas cristalinas que te inspiran a volar.
+              Otros de mis viajes , la capital de mi querido Ecuador. Ese dìa cumplí uno de mis grade propósitos y allì lo vi, una de mis artistas favoritos, Justin Bieber .
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #f991d9;">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">Paulette Olivo</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.container-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: auto;
+}
+
+.card-justify{
+    text-align: justify;
+}

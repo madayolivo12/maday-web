@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <title>Pensamientos</title>
+
+</head>
+<body>
+    <div class="container-fluid" style="background-color: #f991d9;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="{% url "iniciouRL" %}">Inicio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="{% url "viajarUrl" %}">Viajar
+                          <span class="visually-hidden">(current)</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url "videoUrl" %}">Vídeos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url "musicaUrl" %}">Músicas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url "pensamientoUrl" %}">Pensamientos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+      <h1 class="text-center"><b>Mis pensamientos</b></h1>
+    </div>
+    <div class="container">
+      <p class="card-justify">
+        Estaba tan consumida por estar ocupada, que no me di cuenta de lo mucho que no estaba disfrutando de mi vida.
+
+        Propósito y pasión: de eso se trata la vida. Todos necesitamos un elemento de propósito y pasión en nuestras vidas para sentir que somos útiles.
+
+        A veces me olvido de que soy una adulta. Ser adulta no está resultando como lo planeé, al menos no exactamente.
+
+        ¿Alguna vez te has castigado por no responder a todos los mensajes que recibiste en un día? Yo también...
+
+        No me gusta mi cumpleaños, quiero sentirme especial todos los días.
+      </p>
+      <br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="https://img.freepik.com/vector-gratis/pensamiento-mujer-joven-tiene-ilustracion-arte-historieta-dibujada-mano-historieta-concepto-opcion-pregunta_56104-1043.jpg?w=996&t=st=1675037627~exp=1675038227~hmac=ff4cf73a7d626b18048c2b126468373dcff521596554b71dab8d8a2072fb9330" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-justify">En nuestros locos intentos, renunciamos a lo que somos por lo que esperamos ser y quizás nunca seremos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://media.istockphoto.com/id/1281645110/es/vector/cerebro-de-dibujos-animados-con-mara%C3%B1a-de-pensamientos-desordenados.jpg?s=2048x2048&w=is&k=20&c=eGdBBZ03Q-i5kfuGijmN_p4qjW-CHzjnfOgskclfct8=" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-justify">Tu tiempo es demasiado valioso como para perder a la gente que no puede aceptar lo que eres.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://img.freepik.com/vector-premium/concepto-pensamiento-positivo_118813-747.jpg?w=996" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-justify">Si te rindes cuando las cosas se empiezan a poner difíciles, nunca conseguirás nada que valga la pena.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #f991d9;">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">Paulette Olivo</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
